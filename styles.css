@@ -6,6 +6,9 @@ body {
     position: relative;
     min-height: 100vh; /* Ensure body takes at least the full viewport height */
     overflow: auto;  /* Allows scrolling if content exceeds the viewport */
+    background-image: url('https://res.cloudinary.com/dt7o2ypts/image/upload/v1738335328/dipvfz0jyvj1zeprtoho.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
 }
 
 header, footer {
@@ -37,20 +40,4 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-/* Background image (no blur for body, only header/footer/section) */
-body::before {
-    content: "";
-    background-image: url('https://res.cloudinary.com/dt7o2ypts/image/upload/v1738335328/dipvfz0jyvj1zeprtoho.jpg');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0; /* Places the image behind content */
-    height: 100%;
-    width: 100%;
 }
