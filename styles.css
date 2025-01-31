@@ -4,42 +4,98 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
-    min-height: 100vh; /* Ensure body takes at least the full viewport height */
-    overflow: auto;  /* Allows scrolling if content exceeds the viewport */
+    min-height: 100vh;
+    overflow: auto;
     background-image: url('https://res.cloudinary.com/dt7o2ypts/image/upload/v1738335328/dipvfz0jyvj1zeprtoho.jpg');
-    background-size: cover; /* Cover the entire screen */
-    background-position: center; /* Center the background image */
+    background-size: cover;
+    background-position: center;
 }
 
 header, footer {
-    background: rgba(211, 211, 211, 0.6); /* Light grey background with transparency */
+    background: rgba(211, 211, 211, 0.6);
     color: white;
     padding: 15px 0;
     position: relative;
-    z-index: 1; /* Ensures header/footer are above any background */
-    backdrop-filter: blur(5px); /* Apply blur effect to the header/footer */
+    z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 section {
     padding: 30px 20px;
-    background: rgba(211, 211, 211, 0.6); /* Light grey background with transparency */
-    margin: 10px auto;  /* Auto margins for centering */
-    border-radius: 20px; /* Increased border-radius for more pronounced curves */
-    z-index: 2; /* Ensure content appears above the background */
+    background: rgba(211, 211, 211, 0.6);
+    margin: 10px auto;
+    border-radius: 20px;
+    z-index: 2;
     position: relative;
-    backdrop-filter: blur(5px); /* Apply blur effect to the section */
-    max-width: 800px; /* Control max width of the section */
-    width: 90%; /* Ensure sections do not stretch too far */
+    backdrop-filter: blur(5px);
+    max-width: 800px;
+    width: 90%;
+}
+
+.image-section {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 img {
-    max-width: 100%;   /* Ensure it scales with its container */
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-<<<<<<< HEAD
+    border-radius: 10px;
 }
-=======
+
+/* Initially hide the content */
+.about-description, .contact-description {
+    display: none;
 }
->>>>>>> 55a817a (added file)
+
+/* Make visible when toggled */
+.show {
+    display: block;
+}
+
+.contact a {
+    color: #232b2b ;  /* Set link color to black */
+    text-decoration: none;  /* Remove underline by default */
+    font-weight: normal; /* Optional: Keep the font weight normal */
+}
+
+.contact a:hover {
+    color: #ffffff ; /* Darker shade of black on hover for better interaction */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+.toggle-btn {
+    background-color: #dcdcdc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #555555 ;
+}
+
+/* Style the h2 tags in About Me and Contact sections to make them white */
+.about-me h2, .contact h2 {
+    color: white;
+}
+
+h2 {
+    color: #3498DB; /* default blue color */
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
