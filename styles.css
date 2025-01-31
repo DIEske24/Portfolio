@@ -4,8 +4,8 @@ body {
     padding: 0;
     text-align: center;
     position: relative;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;  /* Prevents scrolling */
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
+    overflow: auto;  /* Allows scrolling if content exceeds the viewport */
 }
 
 header, footer {
