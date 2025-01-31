@@ -45,25 +45,23 @@ img {
     border-radius: 10px;
 }
 
-/* Initially hide the content */
 .about-description, .contact-description {
     display: none;
 }
 
-/* Make visible when toggled */
 .show {
     display: block;
 }
 
 .contact a {
-    color: #232b2b ;  /* Set link color to black */
-    text-decoration: none;  /* Remove underline by default */
-    font-weight: normal; /* Optional: Keep the font weight normal */
+    color: #232b2b ;  
+    text-decoration: none;  
+    font-weight: normal; 
 }
 
 .contact a:hover {
-    color: #ffffff ; /* Darker shade of black on hover for better interaction */
-    text-decoration: underline; /* Add underline on hover for clarity */
+    color: #ffffff ; 
+    text-decoration: underline;
 }
 
 .toggle-btn {
@@ -81,13 +79,12 @@ img {
     background-color: #555555 ;
 }
 
-/* Style the h2 tags in About Me and Contact sections to make them white */
 .about-me h2, .contact h2 {
     color: white;
 }
 
 h2 {
-    color: #3498DB; /* default blue color */
+    color: #3498DB; 
 }
 
 a {
